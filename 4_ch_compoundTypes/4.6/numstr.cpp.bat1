@@ -1,0 +1,18 @@
+#include <iostream>
+
+int main()
+{
+	using namespace std;
+	cout << "What year was your house built?\r\n";
+	int year;
+	cin >> year;
+	cin.get();
+	cout << "What is its street address?\r\n";
+	char address[80];
+	cin.get(address, 80).get();
+	cout << "Year built: " << year << endl;
+	cout << "Address: " << address << endl;
+	cout << "Done!\r\n";
+
+	return 0;
+}
